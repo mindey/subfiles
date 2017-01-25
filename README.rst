@@ -3,10 +3,18 @@
     :width: 100%
     :align: center
 
-subfiles-cli
-============
+```
+[.graph.json] - https://www.wikidata.org/wiki/Q182598
+cat: https://www.wikidata.org/wiki/Q146
+dog: https://www.wikidata.org/wiki/Q144
+love: https://www.wikidata.org/wiki/Q316
 
-*A command line program to generate .subfiles*
+[.products.csv] - https://www.wikidata.org/wiki/Q278425
+url: https://www.wikidata.org/wiki/Q42253
+currency: https://www.wikidata.org/wiki/Q8142
+price: https://www.wikidata.org/wiki/Q160151
+name: https://www.wikidata.org/wiki/Q1786779
+```
 
 Purpose
 -------
