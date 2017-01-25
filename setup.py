@@ -7,7 +7,7 @@ from subprocess import call
 
 from setuptools import Command, find_packages, setup
 
-from skele import __version__
+from subfiles import __version__
 
 
 this_dir = abspath(dirname(__file__))
@@ -28,18 +28,18 @@ class RunTests(Command):
 
     def run(self):
         """Run all tests!"""
-        errno = call(['py.test', '--cov=skele', '--cov-report=term-missing'])
+        errno = call(['py.test', '--cov=subfiles', '--cov-report=term-missing'])
         raise SystemExit(errno)
 
 
 setup(
-    name = 'skele',
+    name = 'subfiles',
     version = __version__,
-    description = 'A skeleton command line program in Python.',
+    description = 'A command line program to generate list of file subextensions.',
     long_description = long_description,
-    url = 'https://github.com/rdegges/skele-cli',
-    author = 'Randall Degges',
-    author_email = 'r@rdegges.com',
+    url = 'https://github.com/mindey/subfiles',
+    author = 'Mindey',
+    author_email = 'mindey@qq.com',
     license = 'UNLICENSE',
     classifiers = [
         'Intended Audience :: Developers',
@@ -63,7 +63,7 @@ setup(
     },
     entry_points = {
         'console_scripts': [
-            'skele=skele.cli:main',
+            'subfiles=subfiles.cli:main',
         ],
     },
     cmdclass = {'test': RunTests},
