@@ -23,7 +23,7 @@ Set up::
 
 In any project, or directory, run::
 
-    $ subfiles init
+    $ subfiles init > .subfiles
 
 This will output ``.subfiles`` with all different file sub-extensions* in the project.
 
