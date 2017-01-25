@@ -3,11 +3,24 @@
     :width: 100%
     :align: center
 
-The idea behind here is to use file extension secondary level to represent and map files with schemas of data that they contain. If you like, you can use the ``.schemas`` instead.
+The idea here is to create namespaces for file extensions for all kind of uses. For example, you might want to use secondary level extensions represent and map files with schemas of data instances that they contain. So, ``.subfiles`` is supposed to just contain any metadata that file extensions carry beyond what the file extension represents. For example, it could be a specific format of the CSV, or anything whatsoever, that helps any other programs or humanst to understand the files in project.
 
 Example .subfiles
 =================
-``.subfiles`` shows what file extensions represent and constituted from instances of what ``subtypes`` (schemas).
+
+.. code::
+   [.city.csv] - SHORT DESCRIPTION
+   MORE INFORMATION
+
+   [.observation.json] - SHORT DESCRIPTION
+   MORE INFORMATION
+
+   ...
+
+Encoding Schemas
+----------------
+
+2nd degree ``.subfiles`` shows what file extensions represent and constituted from instances of what ``subtypes`` (schemas).
 
 .. code::
 
@@ -25,7 +38,7 @@ Example .subfiles
 Purpose
 -------
 
-Extracts file subtypes to create or append all found subtypes in a project
+Extracts file subtypes to level N to create or append all found subtypes in a project
 to a single file, e.g., .subfiles
 
 Usage
@@ -37,9 +50,9 @@ Set up::
 
 In any project, or directory, run::
 
-    $ subfiles init > .subfiles
+    $ subfiles init
 
-This will output ``.subfiles`` with all different file sub-extensions* in the project.
+This will output files grouped by different file sub-extensions* in the project.
 
 * sub-extension: a file extension with a second dot, e.g. sub-extension of file:
 ``hello.new.txt`` is ``.new.txt``.
