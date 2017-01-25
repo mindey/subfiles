@@ -3,6 +3,10 @@ subfiles-cli
 
 *A command line program to generate .subfiles*
 
+.. image:: https://raw.githubusercontent.com/mindey/subfiles/master/misc/subfiles.png
+    :alt: Subfiles Illustration
+    :width: 100%
+    :align: center
 
 Purpose
 -------
