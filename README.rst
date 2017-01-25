@@ -3,6 +3,8 @@
     :width: 100%
     :align: center
 
+The idea behind here is to use file extension secondary level to represent and map files with schemas of data that they contain.
+
 Example .subfiles
 =================
 ``.subfiles`` shows what file extensions represent and constituted from instances of what ``subtypes`` (schemas).
