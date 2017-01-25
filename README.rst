@@ -5,7 +5,7 @@
 
 Example .subfiles
 =================
-``.subfiles`` shows what file extensions represent what ``subtypes`` (just like file types).
+``.subfiles`` shows what file extensions represent and constituted from instances of what ``subtypes`` (schemas).
 
 .. code::
 
