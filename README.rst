@@ -29,3 +29,11 @@ This will output ``.subfiles`` with all different file sub-extensions* in the pr
 
 * sub-extension: a file extension with a second dot, e.g. sub-extension of file:
 ``hello.new.txt`` is ``.new.txt``.
+
+Development reminder
+====================
+
+To publish new version on PyPI::
+
+    $ python setup.py sdist bdist_wheel
+    $ twine upload dist/*
