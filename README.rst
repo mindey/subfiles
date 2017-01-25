@@ -21,7 +21,7 @@ In any project, or directory, run::
 
     $ subfiles init
 
-This will output `.subfiles` with all different file sub-extensions* in the project.
+This will output ``.subfiles`` with all different file sub-extensions* in the project.
 
 * sub-extension: a file extension with a second dot, e.g. sub-extension of file:
-`hello.new.txt` is `.new.txt`.
+``hello.new.txt`` is ``.new.txt``.
