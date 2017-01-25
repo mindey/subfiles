@@ -9,13 +9,12 @@ Example .subfiles
 =================
 
 .. code::
+
    [.city.csv] - SHORT DESCRIPTION
    MORE INFORMATION
 
    [.observation.json] - SHORT DESCRIPTION
    MORE INFORMATION
-
-   ...
 
 Encoding Schemas
 ----------------
