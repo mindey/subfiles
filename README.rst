@@ -3,18 +3,22 @@
     :width: 100%
     :align: center
 
-```
-[.graph.json] - https://www.wikidata.org/wiki/Q182598
-cat: https://www.wikidata.org/wiki/Q146
-dog: https://www.wikidata.org/wiki/Q144
-love: https://www.wikidata.org/wiki/Q316
+Example .subfiles
+=================
+``.subfiles`` shows what file extensions represent what ``subtypes`` (just like file types).
 
-[.products.csv] - https://www.wikidata.org/wiki/Q278425
-url: https://www.wikidata.org/wiki/Q42253
-currency: https://www.wikidata.org/wiki/Q8142
-price: https://www.wikidata.org/wiki/Q160151
-name: https://www.wikidata.org/wiki/Q1786779
-```
+.. code::
+
+   [.graph.json] - https://www.wikidata.org/wiki/Q182598
+   cat: https://www.wikidata.org/wiki/Q146
+   dog: https://www.wikidata.org/wiki/Q144
+   love: https://www.wikidata.org/wiki/Q316
+   
+   [.products.csv] - https://www.wikidata.org/wiki/Q278425
+   url: https://www.wikidata.org/wiki/Q42253
+   currency: https://www.wikidata.org/wiki/Q8142
+   price: https://www.wikidata.org/wiki/Q160151
+   name: https://www.wikidata.org/wiki/Q1786779
 
 Purpose
 -------
