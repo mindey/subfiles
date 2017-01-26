@@ -3,6 +3,33 @@
     :width: 100%
     :align: center
 
+Purpose
+-------
+
+Extracts subtypes of files in a directory, so as to have a list of file **sub**-extensions appearing in directory.
+
+Usage
+-----
+
+Set up::
+
+    $ pip install subfiles
+
+In any project, or directory, run to preview what files with subextensions are::
+
+    $ subtypes -l
+
+This will output files grouped by different file sub-extensions in the project.
+
+To start defining schemas for files with some filetypes, do::
+
+    $ subtypes -s > .subtypes
+
+Then, edit the generated ``.subtypes`` file to suit your needs, in the following format:
+
+About
+-----
+
 The package introduces ``subtypes`` command to extract **subtypes of files** in a directory, so as to have a list of file "subextensions" appearing in directory for any purpose. A subextension is an extension of second or lower level (e.g., ``subextension('hello.world.txt')='.world.txt'``).
 
 The idea here is that our file extensions don't have to end with one dot, and we can create multi-level namespaces for file extensions for all kind of uses based on dot notation. There are many potential uses. For example, you might want to use secondary level extensions represent and map files with schemas of data instances that they contain. Why this matters for all data - https://youtu.be/KawiP8XBgtE .
@@ -36,29 +63,8 @@ One very useful case for ``.subtypes``, is encoding the information about the da
    price: https://www.wikidata.org/wiki/Q160151
    name: https://www.wikidata.org/wiki/Q1786779
 
-Purpose
--------
+In the schema subtypes we could agree to have the links to concepts, the instance of which the thing in the file of this subextension is.
 
-Extracts subtypes of files in a directory, so as to have a list of file **sub**-extensions appearing in directory.
-
-Usage
------
-
-Set up::
-
-    $ pip install subfiles
-
-In any project, or directory, run to preview what files with subextensions are::
-
-    $ subtypes -l
-
-This will output files grouped by different file sub-extensions in the project.
-
-To start defining schemas for files with some filetypes, do::
-
-    $ subtypes -s > .subtypes
-
-Then, edit the generated ``.subtypes`` file to suit your needs, in the following format:
 
 
 Development reminder
