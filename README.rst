@@ -6,7 +6,7 @@
 Purpose
 -------
 
-Extracts subtypes of files in a directory, so as to have a list of file **sub**-extensions appearing in directory. 
+Introduce command ``subtypes`` to extract subtypes of files in a directory, so as to have a list of file **sub**-extensions appearing in directory. 
 
 Usage
 -----
