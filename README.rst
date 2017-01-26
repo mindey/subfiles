@@ -21,7 +21,7 @@ The basic format of the .subfiles is a wildcard map of file extensions within a 
 
 Usage to Encode Schemas
 -----------------------
-One very useful case for ``.subtypes``, is encoding the information about the data schemas stored in files with sub-extensions. For this use-case, we might even agree to use a special kind of subtype, which is ``.schema.subtypes``.
+One very useful case for ``.subtypes``, is encoding the information about the data schemas stored in files with sub-extensions. For this use-case, we might even agree to use a special kind of subtype, which is ``.schema.subtypes``:
 
 .. code::
 
