@@ -1,17 +1,19 @@
 """
-subfiles
+subtypes
 
 Usage:
-  subfiles init
-  subfiles -h | --help
-  subfiles --version
+  subtypes schema
+  subtypes -l | --list
+  subtypes -h | --help
+  subtypes --version
 
 Options:
   -h --help                         Show this screen.
   --version                         Show version.
 
 Examples:
-  subfiles init
+  subtypes -l
+  subtypes schema
 
 Help:
   For help using this tool, please open an issue on the Github repository:
@@ -34,6 +36,8 @@ def main():
     # Here we'll try to dynamically match the command the user is trying to run
     # with a pre-defined command class we've already created.
     for (k, v) in options.items(): 
+        if k in ['-l', '--list']:
+            k = 'list'
         if hasattr(subfiles.commands, k) and v:
             module = getattr(subfiles.commands, k)
             subfiles.commands = getmembers(module, isclass)

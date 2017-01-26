@@ -7,10 +7,6 @@ from unittest import TestCase
 
 class TestHello(TestCase):
     def test_returns_multiple_lines(self):
-        output = popen(['subfiles', 'hello'], stdout=PIPE).communicate()[0]
+        output = popen(['subtypes', 'schema'], stdout=PIPE).communicate()[0]
         lines = output.split('\n')
         self.assertTrue(len(lines) != 1)
-
-    def test_returns_hello_world(self):
-        output = popen(['subfiles', 'hello'], stdout=PIPE).communicate()[0]
-        self.assertTrue('Hello, world!' in output)

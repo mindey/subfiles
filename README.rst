@@ -3,10 +3,30 @@
     :width: 100%
     :align: center
 
-The idea here is to create namespaces for file extensions for all kind of uses. For example, you might want to use secondary level extensions represent and map files with schemas of data instances that they contain. So, ``.subfiles`` is supposed to just contain any metadata that file extensions carry beyond what the file extension represents. For example, it could be a specific format of the CSV, or anything whatsoever, that helps any other programs or humanst to understand the files in project.
+The idea here is to create namespaces for file extensions for all kind of uses. For example, you might want to use secondary level extensions represent and map files with schemas of data instances that they contain. So, ``.subfiles`` is supposed to just contain any metadata that file extensions carry beyond what the file extension represents. For example, it could be a specific format of the CSV, or anything whatsoever, that helps any other programs or humanst to understand the files in project, such as:
 
-Example .subfiles
-=================
+Purpose
+-------
+
+Extracts file subtypes of files in a directory, so as to have a list of file extensions appearing in directory.
+
+Usage
+-----
+
+Set up::
+
+    $ pip install subfiles
+
+In any project, or directory, run::
+
+    $ subfiles -l
+
+This will output files grouped by different file sub-extensions in the project.
+
+Encoding Schemas
+----------------
+
+The command can be used to quickly get a prototype for creation of schemas for files with 2nd level extensions.
 
 .. code::
 
@@ -16,8 +36,6 @@ Example .subfiles
    [.observation.json] - SHORT DESCRIPTION
    MORE INFORMATION
 
-Encoding Schemas
-----------------
 
 2nd degree ``.subfiles`` shows what file extensions represent and constituted from instances of what ``subtypes`` (schemas).
 
@@ -34,27 +52,7 @@ Encoding Schemas
    price: https://www.wikidata.org/wiki/Q160151
    name: https://www.wikidata.org/wiki/Q1786779
 
-Purpose
--------
 
-Extracts file subtypes to level N to create or append all found subtypes in a project
-to a single file, e.g., .subfiles
-
-Usage
------
-
-Set up::
-
-    $ pip install subfiles
-
-In any project, or directory, run::
-
-    $ subfiles init
-
-This will output files grouped by different file sub-extensions* in the project.
-
-* sub-extension: a file extension with a second dot, e.g. sub-extension of file:
-``hello.new.txt`` is ``.new.txt``.
 
 Development reminder
 ====================
