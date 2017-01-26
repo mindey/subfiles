@@ -59,7 +59,8 @@ In the schema subtypes we could agree to have the links to concepts, the instanc
 Custom Schemas
 --------------
 
-Let's say you ``pip install microdata`` (https://github.com/edsu/microdata), and 
+It may be that you are not entirely satisfied with the schema provided by http://schema.org, e.g., or want to define your own schemas in terms of concepts from custom or other ontologies, you could simply include them as a file subtype in your project.
+
 
 Why?
 ----
