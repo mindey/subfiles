@@ -32,6 +32,7 @@ To start defining schemas for files with some filetypes, do::
 Then, edit the generated ``.schemas`` file to suit your needs, in the following format:
 
 .. code::
+
    [.city.csv] - SHORT DESCRIPTION
    MORE INFORMATION
 
