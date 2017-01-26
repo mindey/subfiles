@@ -56,6 +56,11 @@ One very useful case for ``.subtypes``, is encoding the information about the da
 
 In the schema subtypes we could agree to have the links to concepts, the instance of which the thing in the file of this subextension is.
 
+Custom Schemas
+--------------
+
+Let's say you ``pip install microdata`` (https://github.com/edsu/microdata), and 
+
 Why?
 ----
 
