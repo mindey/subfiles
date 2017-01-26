@@ -19,7 +19,7 @@ Set up::
 
 In any project, or directory, run::
 
-    $ subfiles -l
+    $ subtypes -l
 
 This will output files grouped by different file sub-extensions in the project.
 
@@ -29,6 +29,7 @@ Encoding Schemas
 The command can be used to quickly get a prototype for creation of schemas for files with 2nd level extensions.
 
 .. code::
+   subtypes schema > .schema
 
    [.city.csv] - SHORT DESCRIPTION
    MORE INFORMATION
