@@ -21,7 +21,7 @@ Set up::
 
     $ pip install subfiles
 
-In any project, or directory, run::
+In any project, or directory, run to preview what files with subextensions are::
 
     $ subtypes -l
 
@@ -29,7 +29,7 @@ This will output files grouped by different file sub-extensions in the project.
 
 To start defining schemas for files with some filetypes, do::
 
-    $ subtypes -l > .subtypes
+    $ subtypes -s > .subtypes
 
 Then, edit the generated ``.subtypes`` file to suit your needs, in the following format:
 

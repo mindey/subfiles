@@ -2,7 +2,7 @@
 subtypes
 
 Usage:
-  subtypes schema
+  subtypes -s | --schema
   subtypes -l | --list
   subtypes -h | --help
   subtypes --version
@@ -12,8 +12,8 @@ Options:
   --version                         Show version.
 
 Examples:
+  subtypes -s
   subtypes -l
-  subtypes schema
 
 Help:
   For help using this tool, please open an issue on the Github repository:
@@ -38,6 +38,8 @@ def main():
     for (k, v) in options.items(): 
         if k in ['-l', '--list']:
             k = 'list'
+        if k in ['-s', '--schema']:
+            k = 'schema'
         if hasattr(subfiles.commands, k) and v:
             module = getattr(subfiles.commands, k)
             subfiles.commands = getmembers(module, isclass)
