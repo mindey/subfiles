@@ -3,7 +3,7 @@
     :width: 100%
     :align: center
 
-The package introduces a command ``subtypes`` (not confuse with ``subfiles`` - package name) to extract subtypes of files in a directory, so as to have a list of file extensions appearing in directory for any purpose.
+The package introduces a command ``subtypes`` (≠``subfiles``) to extract subtypes of files in a directory, so as to have a list of file extensions appearing in directory for any purpose.
 
 The idea here is to create namespaces for file extensions for all kind of uses. For example, you might want to use secondary level extensions represent and map files with schemas of data instances that they contain. So, ``.subfiles`` is supposed to just contain any metadata that file extensions carry beyond what the file extension represents. For example, it could be a specific format of the CSV, or anything whatsoever, that helps any other programs or humanst to understand the files in project, such as:
 
