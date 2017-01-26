@@ -3,9 +3,9 @@
     :width: 100%
     :align: center
 
-The package introduces a command ``subtypes`` to extract subtypes of files in a directory, so as to have a list of file extensions appearing in directory for any purpose.
+The package introduces a command ``subtypes`` (≠ ``subfiles``) to extract **subtypes of files** in a directory, so as to have a list of file extensions appearing in directory for any purpose.
 
-The idea here is to create namespaces for file extensions for all kind of uses. For example, you might want to use secondary level extensions represent and map files with schemas of data instances that they contain. So, ``.subfiles`` is supposed to just contain any metadata that file extensions carry beyond what the file extension represents. For example, it could be a specific format of the CSV, or anything whatsoever, that helps any other programs or humanst to understand the files in project, such as:
+The idea here is that our file extensions don't have to end with one dot, and we can create multi-level namespaces for file extensions for all kind of uses based on dot notation. There are many potential uses. For example, you might want to use secondary level extensions represent and map files with schemas of data instances that they contain. So, ``.subtypes`` is supposed to just contain any metadata that file extensions carry beyond what the file extension represents. For example, it could be a specific format of the CSV, or anything whatsoever, that helps any other programs or humanst to understand the files in project, such as:
 
 Purpose
 -------
@@ -25,13 +25,13 @@ In any project, or directory, run::
 
 This will output files grouped by different file sub-extensions in the project.
 
-Encoding Schemas
-----------------
+To start defining schemas for files with some filetypes, do::
 
-The command can be used to quickly get a prototype for creation of schemas for files with 2nd level extensions.
+    $ subtypes -l > .subtypes
+
+Then, edit the generated ``.subtypes`` file to suit your needs, in the following format:
 
 .. code::
-   subtypes schema > .schema
 
    [.city.csv] - SHORT DESCRIPTION
    MORE INFORMATION
@@ -39,8 +39,8 @@ The command can be used to quickly get a prototype for creation of schemas for f
    [.observation.json] - SHORT DESCRIPTION
    MORE INFORMATION
 
-
-2nd degree ``.subfiles`` shows what file extensions represent and constituted from instances of what ``subtypes`` (schemas).
+Example
+-------
 
 .. code::
 
@@ -54,8 +54,6 @@ The command can be used to quickly get a prototype for creation of schemas for f
    currency: https://www.wikidata.org/wiki/Q8142
    price: https://www.wikidata.org/wiki/Q160151
    name: https://www.wikidata.org/wiki/Q1786779
-
-
 
 Development reminder
 ====================
