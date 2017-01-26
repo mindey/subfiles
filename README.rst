@@ -13,10 +13,10 @@ The basic format of the .subfiles is a wildcard map of file extensions within a 
 
 .. code::
 
-   [*.sample.csv] - SHORT DESCRIPTION
+   [*.my_type.csv] - SHORT DESCRIPTION
    MORE INFORMATION
 
-   [*.test.json] - SHORT DESCRIPTION
+   [*.my_other_type.json] - SHORT DESCRIPTION
    MORE INFORMATION
 
 Purpose
