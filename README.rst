@@ -19,6 +19,23 @@ The basic format of the .subfiles is a wildcard map of file extensions within a 
    [*.my_other_type.json] - SHORT DESCRIPTION
    MORE INFORMATION
 
+Usage to Encode Schemas
+-----------------------
+One very useful case for ``.subtypes``, is encoding the information about the data schemas stored in files with sub-extensions. For this use-case, we might even agree to use a special kind of subtype, which is ``.schema.subtypes``.
+
+.. code::
+
+   [*.graph.json] - https://www.wikidata.org/wiki/Q182598
+   cat: https://www.wikidata.org/wiki/Q146
+   dog: https://www.wikidata.org/wiki/Q144
+   love: https://www.wikidata.org/wiki/Q316
+   
+   [*.products.csv] - https://www.wikidata.org/wiki/Q278425
+   url: https://www.wikidata.org/wiki/Q42253
+   currency: https://www.wikidata.org/wiki/Q8142
+   price: https://www.wikidata.org/wiki/Q160151
+   name: https://www.wikidata.org/wiki/Q1786779
+
 Purpose
 -------
 
@@ -43,22 +60,6 @@ To start defining schemas for files with some filetypes, do::
 
 Then, edit the generated ``.subtypes`` file to suit your needs, in the following format:
 
-
-Example
--------
-
-.. code::
-
-   [*.graph.json] - https://www.wikidata.org/wiki/Q182598
-   cat: https://www.wikidata.org/wiki/Q146
-   dog: https://www.wikidata.org/wiki/Q144
-   love: https://www.wikidata.org/wiki/Q316
-   
-   [*.products.csv] - https://www.wikidata.org/wiki/Q278425
-   url: https://www.wikidata.org/wiki/Q42253
-   currency: https://www.wikidata.org/wiki/Q8142
-   price: https://www.wikidata.org/wiki/Q160151
-   name: https://www.wikidata.org/wiki/Q1786779
 
 Development reminder
 ====================
