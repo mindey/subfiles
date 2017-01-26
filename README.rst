@@ -25,22 +25,21 @@ In any project, or directory, run::
 
 This will output files grouped by different file sub-extensions in the project.
 
-Encoding Schemas
-----------------
+To start defining schemas for files with some filetypes, do::
 
-The command can be used to quickly get a prototype for creation of schemas for files with 2nd level extensions.
+    $ subtypes schema > .schemas
+
+Then, edit the generated ``.schemas`` file to suit your needs, in the following format:
 
 .. code::
-   subtypes schema > .schema
-
    [.city.csv] - SHORT DESCRIPTION
    MORE INFORMATION
 
    [.observation.json] - SHORT DESCRIPTION
    MORE INFORMATION
 
-
-2nd degree ``.subfiles`` shows what file extensions represent and constituted from instances of what ``subtypes`` (schemas).
+Example
+-------
 
 .. code::
 
@@ -54,8 +53,6 @@ The command can be used to quickly get a prototype for creation of schemas for f
    currency: https://www.wikidata.org/wiki/Q8142
    price: https://www.wikidata.org/wiki/Q160151
    name: https://www.wikidata.org/wiki/Q1786779
-
-
 
 Development reminder
 ====================
