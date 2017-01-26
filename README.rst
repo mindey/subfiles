@@ -63,7 +63,7 @@ The idea here is that our file extensions don't have to end with one dot, and we
 
 So, the idea here is to introduce a ``.subtypes`` dot file to contain any metadata that data developer assumes for files with subextensions to carry beyond what the traditional file extension represents to help any other programs or humans to understand the files in any project.
 
-The ``subtypes`` command is simply a helper to extract **subtypes of files** in a directory, so as to have a list of file "subextensions" appearing in directory for any purpose. A subextension is an extension of second or greater level (e.g., ``subextension('hello.world.txt')='.world.txt'``).
+The ``subtypes`` command is simply a helper to extract **subtypes of files** in a directory, so as to have a list of file "subextensions" appearing in directory for any purpose. A subextension is an extension of second or greater level (e.g., ``'hello.world.txt'`` has top level extension ``.txt``, and second level subextension ``.world``).
 
 Development reminder
 ====================
