@@ -22,7 +22,7 @@ The basic format of the .subfiles is a wildcard map of file extensions within a 
 Purpose
 -------
 
-Extracts subtypes of files in a directory, so as to have a list of file extensions appearing in directory.
+Extracts subtypes of files in a directory, so as to have a list of file **sub**extensions appearing in directory.
 
 Usage
 -----
