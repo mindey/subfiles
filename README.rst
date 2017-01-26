@@ -3,7 +3,7 @@
     :width: 100%
     :align: center
 
-The package introduces ``subtypes`` command to extract **subtypes of files** in a directory, so as to have a list of file subextensions appearing in directory for any purpose.
+The package introduces ``subtypes`` command to extract **subtypes of files** in a directory, so as to have a list of file "subextensions" appearing in directory for any purpose.
 
 The idea here is that our file extensions don't have to end with one dot, and we can create multi-level namespaces for file extensions for all kind of uses based on dot notation. There are many potential uses. For example, you might want to use secondary level extensions represent and map files with schemas of data instances that they contain. Why this matters for all data - https://youtu.be/KawiP8XBgtE .
 
