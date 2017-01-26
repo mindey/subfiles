@@ -32,6 +32,7 @@ def main():
     """Main CLI entrypoint."""
     import subfiles.commands
     options = docopt(__doc__, version=VERSION)
+    print options
 
     # Here we'll try to dynamically match the command the user is trying to run
     # with a pre-defined command class we've already created.
