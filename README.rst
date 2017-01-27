@@ -23,7 +23,7 @@ This will output files grouped by different file sub-extensions in the project. 
 
 To start defining more information for files with some file subtypes, do::
 
-    $ subtypes -s [level] > .subtypes
+    $ subtypes -s > .subtypes
 
 Then, edit the generated ``.subtypes`` file to suit your needs, in the following format:
 
