@@ -17,15 +17,13 @@ Set up::
 
 In any project, or directory, run to preview what files with subextensions are::
 
-    $ subtypes -l <level>
+    $ subtypes -l [level]
 
-    $ subtypes -s <level>
-
-This will output files grouped by different file sub-extensions in the project. The default ``<level>=2``. You can output standard extensions by choosing ``<level>=1``.
+This will output files grouped by different file sub-extensions in the project. The default ``[level]=2``. You can output standard extensions by choosing ``[level]=1``.
 
 To start defining more information for files with some file subtypes, do::
 
-    $ subtypes -s > .subtypes
+    $ subtypes -s [level] > .subtypes
 
 Then, edit the generated ``.subtypes`` file to suit your needs, in the following format:
 
