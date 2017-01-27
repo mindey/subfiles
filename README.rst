@@ -43,6 +43,8 @@ The basic format of the .subfiles is a wildcard map of file extensions within a 
    __ = SHORT DESCRIPTION
    MORE INFORMATION
 
+Coded this way, it is easy to read as a config parser.
+
 .. code::
 
    import ConfigParser
@@ -50,7 +52,7 @@ The basic format of the .subfiles is a wildcard map of file extensions within a 
    config.readfp(open('.subtypes'))
    config.get('*.my_type.csv', '__')
 
-Coded this way, it is easy to read as a config parser. However, this does not have to be limited to config format, as the "MORE INFORMATION" part could be almost any text.
+However, this does not have to be limited to config format, as the 'more information' part could be almost any text.
 
 Usage to Encode Schemas
 -----------------------
