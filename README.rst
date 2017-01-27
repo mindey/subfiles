@@ -43,7 +43,7 @@ The basic format of the .subfiles is a wildcard map of file extensions within a 
    __ = SHORT DESCRIPTION
    MORE INFORMATION
 
-Coded this way, it is easy to read as a config parser.
+Coded this way, it is easy to read with a config parser.
 
 .. code::
 
