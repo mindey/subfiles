@@ -36,11 +36,11 @@ The basic format of the .subfiles is a wildcard map of file extensions within a 
 .. code::
 
    [*.my_type.csv]
-   __ = SHORT DESCRIPTION
+   __: SHORT DESCRIPTION
    MORE INFORMATION
 
    [*.my_other_type.json]
-   __ = SHORT DESCRIPTION
+   __: SHORT DESCRIPTION
    MORE INFORMATION
 
 Coded this way, it is easy to read with a config parser.
