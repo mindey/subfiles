@@ -64,7 +64,14 @@ One very useful case for ``.subtypes``, is encoding the information about the da
    price: https://www.wikidata.org/wiki/Q160151
    name: https://www.wikidata.org/wiki/Q1786779
 
-In the schema subtypes we could agree to have the links to concepts, the instance of which the thing in the file of this subextension is.
+In the schema subtypes we could agree to have the links to concepts, the instance of which the thing in the file of this subextension is. Coded this way, it is easy to read as a config with Python.
+
+.. code::
+
+   import ConfigParser
+   config = ConfigParser.RawConfigParser()
+   config.readfp(open('.subtypes'))
+   config.get('*.my_type.csv', '__')
 
 Custom Schemas
 --------------
