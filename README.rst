@@ -31,15 +31,19 @@ Again, the default is ``[level]=2``, and if you want to start defining the meani
 
 Then, edit the generated ``.subtypes`` file to suit your needs, in the following format:
 
-The basic format of the .subfiles is a wildcard map of file extensions within a ``[]``, an optional short description after a hyphen surrounded by spaces, more information, and a new-line separator between the diffrent file format descriptions, that is:
+The basic format of the .subfiles is a wildcard map of file extensions within a ``[]``, an optional short description after double underscores ``__``, more information after it, and a new-line separator between the diffrent file format descriptions, that is:
 
 .. code::
 
-   [*.my_type.csv] - SHORT DESCRIPTION
+   [*.my_type.csv]
+   __ = SHORT DESCRIPTION
    MORE INFORMATION
 
-   [*.my_other_type.json] - SHORT DESCRIPTION
+   [*.my_other_type.json]
+   __ = SHORT DESCRIPTION
    MORE INFORMATION
+
+
 
 Usage to Encode Schemas
 -----------------------
@@ -47,12 +51,14 @@ One very useful case for ``.subtypes``, is encoding the information about the da
 
 .. code::
 
-   [*.graph.json] - https://www.wikidata.org/wiki/Q182598
+   [*.graph.json]
+   __: https://www.wikidata.org/wiki/Q182598
    cat: https://www.wikidata.org/wiki/Q146
    dog: https://www.wikidata.org/wiki/Q144
    love: https://www.wikidata.org/wiki/Q316
    
-   [*.products.csv] - https://www.wikidata.org/wiki/Q278425
+   [*.products.csv]
+   __: https://www.wikidata.org/wiki/Q278425
    url: https://www.wikidata.org/wiki/Q42253
    currency: https://www.wikidata.org/wiki/Q8142
    price: https://www.wikidata.org/wiki/Q160151
