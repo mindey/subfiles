@@ -43,7 +43,14 @@ The basic format of the .subfiles is a wildcard map of file extensions within a 
    __ = SHORT DESCRIPTION
    MORE INFORMATION
 
+.. code::
 
+   import ConfigParser
+   config = ConfigParser.RawConfigParser()
+   config.readfp(open('.subtypes'))
+   config.get('*.my_type.csv', '__')
+
+Coded this way, it is easy to read as a config parser. However, this does not have to be limited to config format, as the "MORE INFORMATION" part could be almost any text.
 
 Usage to Encode Schemas
 -----------------------
@@ -64,14 +71,7 @@ One very useful case for ``.subtypes``, is encoding the information about the da
    price: https://www.wikidata.org/wiki/Q160151
    name: https://www.wikidata.org/wiki/Q1786779
 
-In the schema subtypes we could agree to have the links to concepts, the instance of which the thing in the file of this subextension is. Coded this way, it is easy to read as a config with Python.
-
-.. code::
-
-   import ConfigParser
-   config = ConfigParser.RawConfigParser()
-   config.readfp(open('.subtypes'))
-   config.get('*.my_type.csv', '__')
+In the schema subtypes we could agree to have the links to concepts, the instance of which the thing in the file of this subextension is.
 
 Custom Schemas
 --------------
