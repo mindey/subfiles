@@ -1,6 +1,3 @@
-
-========
-
 .. image:: https://raw.githubusercontent.com/mindey/subfiles/master/misc/subfiles.png
     :alt: Subfiles Illustration
     :width: 100%
