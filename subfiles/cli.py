@@ -3,7 +3,9 @@ subtypes
 
 Usage:
   subtypes -s | --schema
+  subtypes -s <level>
   subtypes -l | --list
+  subtypes -l <level>
   subtypes -h | --help
   subtypes --version
 
