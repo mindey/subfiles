@@ -17,7 +17,6 @@ class List(Base):
 
         if len(sys.argv) == 3:
             try:
-                print 'CHANGING LEVEL'
                 level = int(sys.argv[-1])
             except:
                 pass
