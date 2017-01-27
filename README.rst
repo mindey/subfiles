@@ -1,4 +1,4 @@
-subfiles
+
 ========
 
 .. image:: https://raw.githubusercontent.com/mindey/subfiles/master/misc/subfiles.png
