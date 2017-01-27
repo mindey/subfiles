@@ -21,7 +21,11 @@ In any project, or directory, run to preview what files with subextensions are::
 
 This will output files grouped by different file sub-extensions in the project. The default ``[level]=2``. You can output standard extensions by choosing ``[level]=1``.
 
-To start defining more information for files with some file subtypes, do::
+To preview what the ``.subtypes`` file would be generated, type::
+
+    $ subtypes -s [level]
+
+Again, the default is ``[level]=2``, and if you want to start defining the meaning for the 2nd level subextensions, just do::
 
     $ subtypes -s > .subtypes
 
