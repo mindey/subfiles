@@ -84,7 +84,7 @@ It may be that you are not entirely satisfied with the schema provided by http:/
 Why?
 ----
 
-The idea here is that our file extensions don't have to end with one dot, and we can create multi-level namespaces for file extensions for all kind of uses based on dot notation. There are many potential uses. For example, you might want to use secondary level extensions represent and map files with schemas of data instances that they contain. Why this matters for all data - https://youtu.be/KawiP8XBgtE .
+The idea here is that our file extensions don't have to end with one dot, and we can create multi-level namespaces for file extensions for all kind of uses based on dot notation. There are many potential uses. For example, you might want to use secondary level extensions represent and map files with schemas of data instances that they contain.
 
 So, the idea here is to introduce a ``.subtypes`` dot file to contain any metadata that data developer assumes for files with subextensions to carry beyond what the traditional file extension represents to help any other programs or humans to understand the files in any project.
 
