@@ -50,6 +50,7 @@ Coded this way, it is easy to read with a config parser.
    # Python3
    import configparser
    config = configparser.ConfigParser()
+   config.optionxform=str
    config.read('.subtypes')
    # Sections
    config.sections()
@@ -63,6 +64,7 @@ Coded this way, it is easy to read with a config parser.
    # Python2
    import ConfigParser
    config = ConfigParser.RawConfigParser()
+   config.optionxform=str
    config.readfp(open('.subtypes'))
    config.get('*.my_type.csv', '__')
 
