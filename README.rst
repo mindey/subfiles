@@ -51,6 +51,11 @@ Coded this way, it is easy to read with a config parser.
    import configparser
    config = configparser.ConfigParser()
    config.read('.subtypes')
+   # Sections
+   config.sections()
+   # Keys
+   for key in config['*.my_type.csv']: print(key)
+   # Values
    config['*.my_type.csv']['__']
 
 .. code::
