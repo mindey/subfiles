@@ -46,7 +46,14 @@ The basic format of the .subfiles is a wildcard map of file extensions within a 
 Coded this way, it is easy to read with a config parser.
 
 .. code::
+   # Python3
+   import configparser
+   config = configparser.ConfigParser()
+   config.read('.subtypes')
+   config['*.my_type.csv']['__']
 
+.. code::
+   # Python2
    import ConfigParser
    config = ConfigParser.RawConfigParser()
    config.readfp(open('.subtypes'))
