@@ -2,6 +2,8 @@
     :alt: Subfiles Illustration
     :width: 100%
     :align: center
+    
+**Make files parsable!**
 
 Say you're editing a wiki using default ``.txt`` files, but you are using some specific syntax, e.g., ``markdown``, or ``zimwiki``, or some other... How can another program know what schema you use in your ``.txt`` files, or your ``.json`` files, ``.xls`` files, any kind of other files? For all what we know, your pogram that you generated your files with might have a specific **version of program**, and the different versions of the program might use **specific schemas** (file formats) for these simple files (records stored in our disks). How do we make sure that the future generation can automatically know what schema was used, and what software can be used to automatically and 100% correctly parse them, or convert them to other types? One way would be to add ``Content-Type`` and ``Softare Version`` to each file. However, what if you want to do that without changing the files or their content? What if these are binary files? Well, the solution proposed here is that you just place ``.subtypes`` file into the directory where your files are, and describe, what these type of files are. for example::
 
