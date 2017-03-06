@@ -3,6 +3,25 @@
     :width: 100%
     :align: center
 
+Say you're editing a wiki using default ``.txt`` files, but you are using some specific syntax, e.g., ``markdown``, or ``zimwiki``, or some other... Or, say you are saving a ``.json`` file, which is native to some specific program, or, a specific version of program. These different versions might use different schemas for records stored in these simple files. How do we make so that the future generations, that find these files on our disks, can automatically understand, what schema was used, and what software can be used to automatically and 100% correctly parse them, or convert them to other types? One way would be to add ``Content-Type`` and ``Softare Version`` to each file. However, what if you want to do that without changing the files or their content? Well, just place ``.subtypes`` into the directory where your files are, and describe, what these type of files are. for example::
+
+    [*.txt]
+    <description goes here>
+    
+    [*.json]
+    <description goes here>
+
+That's the main principle of ``.subtypes`` file. Our files are records in some databases, and if we want to organize them, we have to describe what record types they are... But what if you have multiple ``.txt`` files in a project, with different kind of internal format? Well, you can describe that in ``.subtypes`` too, e.g.::
+    
+    [*.kind1.txt]
+    <description goes here>
+    
+    [*.kind2.txt]
+    <description goes here>
+
+We're introducing something like a second level of file extension here, like a namespacing in file extensions. ``.subtypes`` is all about utilizing this to encode meaningful information, such as the file schema information, and the ``subfiles`` package here is just a helper program to find and list all the existing file extensions, sub-extensions, etc. in current directory and all its subdirectories.
+
+
 Purpose
 -------
 
