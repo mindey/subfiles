@@ -26,7 +26,7 @@ We're introducing something like a second level of file extension here, like a n
 So what?
 --------
 
-So, now, I simply put the file ``.subtypes`` file in my folder where I keep my ``zimwiki``, and say, that my files have a specific format, and I can rest assured that later they will be automatically convertable to whatever othe format that becomes popular.
+So, now, I simply put the file ``.subtypes`` file in my folder where I keep my ``zimwiki``, and this way say, that my ``.txt`` files have a specific format in that folder, and I can rest assured that later they will be automatically convertable to whatever othe format that becomes popular.
 
 
 Purpose
