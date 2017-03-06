@@ -23,6 +23,11 @@ Now, let's say you have multiple ``.txt`` files in a project, with different kin
 
 We're introducing something like a second level of file extension here, like a namespacing in file extensions, and ``.subtypes`` is all about utilizing this to encode meaningful meta information, such as the file schema, and the ``subfiles`` package here is just a helper program to find and list all the existing file extensions, sub-extensions, etc. in current directory and all its subdirectories.
 
+So what?
+--------
+
+So, now, I simply put the file ``.subtypes`` file in my folder where I keep my ``zimwiki``, and say, that my files have a specific format, and I can rest assured that later they will be automatically convertable to whatever othe format that becomes popular.
+
 
 Purpose
 -------
