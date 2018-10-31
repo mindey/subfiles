@@ -21,7 +21,9 @@ class Schema(Base):
             except:
                 pass
 
-        results = files_by_extensions('.', level)
+        results = collections.OrderedDict()
+        for level in range(levels):
+            results.update(files_by_extensions('.', level))
 
         for key, val in enumerate(results):
             print("[*.{key}]".format(**{'key':val}))

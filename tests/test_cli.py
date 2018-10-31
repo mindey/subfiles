@@ -9,14 +9,14 @@ from subfiles import __version__ as VERSION
 
 class TestHelp(TestCase):
     def test_returns_usage_information(self):
-        output = popen(['subtypes', '-h'], stdout=PIPE).communicate()[0]
-        self.assertTrue('Usage:' in output)
+        output = popen(['ftypes', '-h'], stdout=PIPE).communicate()[0]
+        self.assertTrue(bytes('Usage:', 'utf-8') in output)
 
-        output = popen(['subtypes', '--help'], stdout=PIPE).communicate()[0]
-        self.assertTrue('Usage:' in output)
+        output = popen(['ftypes', '--help'], stdout=PIPE).communicate()[0]
+        self.assertTrue(bytes('Usage:', 'utf-8') in output)
 
 
 class TestVersion(TestCase):
     def test_returns_version_information(self):
-        output = popen(['subtypes', '--version'], stdout=PIPE).communicate()[0]
-        self.assertEqual(output.strip(), VERSION)
+        output = popen(['ftypes', '--version'], stdout=PIPE).communicate()[0]
+        self.assertEqual(output.strip(), bytes(VERSION, 'utf-8'))

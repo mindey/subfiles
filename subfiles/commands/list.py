@@ -9,11 +9,13 @@ from .utils import files_by_extensions
 
 import sys
 
+import collections
+
 class List(Base):
 
     def run(self):
 
-        level = 2
+        levels = 2
 
         if len(sys.argv) == 3:
             try:
@@ -21,7 +23,9 @@ class List(Base):
             except:
                 pass
 
-        results = files_by_extensions('.', level)
+        results = collections.OrderedDict()
+        for level in range(levels):
+            results.update(files_by_extensions('.', level))
 
         for key, val in enumerate(results):
             print("[*.{key}]".format(**{'key':val}))

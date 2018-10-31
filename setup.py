@@ -63,7 +63,7 @@ setup(
     },
     entry_points = {
         'console_scripts': [
-            'subtypes=subfiles.cli:main',
+            'ftypes=subfiles.cli:main',
         ],
     },
     cmdclass = {'test': RunTests},

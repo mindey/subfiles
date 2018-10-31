@@ -1,21 +1,21 @@
 """
-subtypes
+ftypes
 
 Usage:
-  subtypes -s | --schema
-  subtypes -s <level>
-  subtypes -l | --list
-  subtypes -l <level>
-  subtypes -h | --help
-  subtypes --version
+  ftypes -s | --schema
+  ftypes -s <level>
+  ftypes -l | --list
+  ftypes -l <level>
+  ftypes -h | --help
+  ftypes --version
 
 Options:
   -h --help                         Show this screen.
   --version                         Show version.
 
 Examples:
-  subtypes -s
-  subtypes -l
+  ftypes -s
+  ftypes -l
 
 Help:
   For help using this tool, please open an issue on the Github repository:
@@ -37,7 +37,7 @@ def main():
 
     # Here we'll try to dynamically match the command the user is trying to run
     # with a pre-defined command class we've already created.
-    for (k, v) in options.items(): 
+    for (k, v) in options.items():
         if k in ['-l', '--list']:
             k = 'list'
         if k in ['-s', '--schema']:

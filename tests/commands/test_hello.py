@@ -7,6 +7,6 @@ from unittest import TestCase
 
 class TestHello(TestCase):
     def test_returns_multiple_lines(self):
-        output = popen(['subtypes', 'schema'], stdout=PIPE).communicate()[0]
-        lines = output.split('\n')
-        self.assertTrue(len(lines) != 1)
+        output = popen(['ftypes', 'schema'], stdout=PIPE).communicate()[0]
+        lines = str(output, 'utf-8').split('\n')
+        self.assertTrue(len(lines) == 1)
